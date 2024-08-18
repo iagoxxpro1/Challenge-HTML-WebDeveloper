@@ -3,14 +3,37 @@ HEAD pré carrega antes de exibir para o usuário
 BODY é o que de fato vai aparecer para o usuário quando ele carregar a página
 -->
 <html>
-    <head>
-        <title>Meu primeiro HTML</title>
-    </head>
-    <body>
-       <h1>Meu primeiro HTML!</h1>
-        <input type="text"/>
-        <ul>
-            <a href="about.html">Sobre a empresa</a>
-        </ul>
-    </body>
+  <head>
+    <title>Learning HTML</title>
+  </head>
+  <body>
+    <h2>Meu primeiro HTML!</h2>
+    <input type="text" />
+    <ul>
+      <a href="about.html">Sobre a empresa</a>
+    </ul>
+  </body>
+</html>
+<hr />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h2>Trabalhando com formulários</h2>
+    <form
+      name="signup"
+      onsubmit="alert('Enviei o formulario');"
+      autocomplete="on"
+      method="POST"
+      action="#"
+    >
+      Nome: <input type="text" name="name" /><br />
+      Idade: <input type="number" name="age" /><br />
+      Senha: <input type="password" name="password" /><br />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
 </html>
