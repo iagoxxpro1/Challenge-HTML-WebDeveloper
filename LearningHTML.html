@@ -12,16 +12,9 @@ BODY é o que de fato vai aparecer para o usuário quando ele carregar a página
     <ul>
       <a href="about.html">Sobre a empresa</a>
     </ul>
-  </body>
-</html>
-<hr />
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
+    <hr />
+
+    <!-- Trabalhando com formúlarios: tags form e input -->
     <h2>Trabalhando com formulários</h2>
     <form
       name="signup"
@@ -35,5 +28,93 @@ BODY é o que de fato vai aparecer para o usuário quando ele carregar a página
       Senha: <input type="password" name="password" /><br />
       <button type="submit">Enviar</button>
     </form>
+    <hr />
+
+    <!-- Trabalhando com formulários: checkbox e radio -->
+    <form method="get">
+      <h2>Você selecionou: Pizza de calabresa</h2>
+      <p>Quais opcionais você deseja?</p>
+      <input type="checkbox" name="opcional[]" value="queijo" /> + queijo
+      <br />
+      <input type="checkbox" name="opcional[]" value="calabresa" /> + calabresa
+      <br />
+      <p>Borda recheada</p>
+      <input type="radio" name="borda" value="sim" />Sim <br />
+      <input type="radio" name="borda" value="nao" />Não <br />
+      <p>Bebida</p>
+      <input type="radio" name="bebida" value="suco" />Suco <br />
+      <input type="radio" name="bebida" value="refrigerante" />Refrigerante
+      <br />
+
+      <button type="submit">Enviar pedido</button>
+    </form>
+    <hr />
+
+    <h2>Button e seus tipos'</h2>
+    <form onsubmit="" method="get">
+      <label>Nome:</label><input type="text" name="name" /><br />
+      <label>Idade:</label><input type="number" name="name" /><br />
+      <label>password:</label><input type="password" name="password" /><br />
+      <button type="submit">Enviar</button>
+    </form>
+    <hr />
+
+    <h2>Select e seus tipos</h2>
+    <form onsubmit="" method="get">
+      <label>Nome:</label><input type="text" name="name" /><br />
+      <label>Cargo:</label>
+      <select name="role">
+        <option value="">Selecione o cargo</option>
+        <option value="gerente">Gerente</option>
+        <option value="diretor">Diretor</option>
+        <option selected value="presidente">Presidente</option>
+      </select>
+      <br />
+      <label>Assunto:</label><input type="text" name="subject" /><br />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <fieldset>
+      <legend>Chapter estruturando HTML e formatações</legend>
+      <h2>Estruturando HTML e Formatações</h2>
+      <blockquote>blockquote serve para centralizar o texto</blockquote>
+      <font color="aquamarine" face="arial">Code Formatação de texto</font>
+      <p>
+        tag iframe traz um site dentro do seu site, veja como funciona: <br />
+        <iframe
+          src="https://inovajoiasbr.com.br/"
+          width="800"
+          height="200"
+        ></iframe>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Criando Tabelas</legend>
+      <style>
+        table tr:nth-child(even) {
+          background-color: burlywood;
+        }
+        table tr:hover td {
+          background-color: darkgrey;
+        }
+      </style>
+      <table
+        summary="escreva aqui a que se refere a tabela"
+        border="1"
+        width="250"
+        cellspacing="15"
+        align="center"
+      >
+        <tr>
+          <td>Nome</td>
+          <td>Idade</td>
+        </tr>
+        <tr>
+          <td>Diogo</td>
+          <td>37</td>
+        </tr>
+      </table>
+    </fieldset>
   </body>
 </html>
